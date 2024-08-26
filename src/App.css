@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  /* font-family:'Metropolis', sans-serif;
+  src: url(./fonts/open-sans/OpenSans-Light.ttf); */
+  font-family:'Metropolis', sans-serif;
+  src: url(./fonts/open-sans/OpenSans-Regular.ttf);
+}
+body{
+  font-family: 'Metropolis', sans-serif;
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+}
+.section{
+padding: 0 4rem;
+}
+.Propertytype{
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: 2px;
+}
+.Propertytype span {
+  display: block;
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    padding: 1rem;
+  }
+  .section{
+    padding: 0;
+  }
+  .Propertytype{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}

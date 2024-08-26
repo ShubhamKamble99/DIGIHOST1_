@@ -1,0 +1,142 @@
+.aboutUs {
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+
+}
+.content {
+    /* flex: 1; */
+    padding-left: 50px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 0px;
+    background-color:transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+button span{
+    display: block;
+}
+
+.image {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.aboutUs {
+    position: relative;
+    overflow: hidden;
+}
+.content .title{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+.content .description{
+    font-size: 1.6rem;
+}
+
+/* For Responsive */
+
+@media only screen and (max-width: 600px) {
+    .image{
+        width: 100%;
+    }
+    .aboutUs{
+        padding: 0;
+    }
+    .content{
+        padding: 1rem;
+    }
+    .content .title{
+        font-size: 1.6rem;
+    }
+    .content .description{
+        font-size: 1.2rem;
+    }
+    .aboutUs{
+        overflow: visible;
+    }
+}
+
+/* For Custom Rounded CSS */
+/* .outerCircle {
+    position: relative;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    margin: auto;
+    padding: 25em;
+    margin-top: 8em;
+    margin-left: -16em;
+    z-index: 0;
+}
+
+.innerrCircletop{
+    position: relative;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: -26em;
+    margin-left: -13em;
+    z-index: 1;
+    background: #000;
+}
+
+.innerrCirclebottom{
+    position: relative;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 11.5em;
+    margin-left: -13em;
+    z-index: 1;
+    background: #000;
+}
+.imageBox{
+    width: 600px; 
+    height: 377px;
+    background-color: #000;
+    position: relative;
+    right: -9rem;
+    top: 6rem;
+}
+.innerrCircletop {
+    top: -75px;
+    left: 75px;
+}
+
+.innerrCirclebottom {
+    bottom: -75px;
+    left: 75px;
+}
+
+.innerrCircletop img, .innerrCirclebottom img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.imageBox {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageBox img {
+    width: 100%;
+} */

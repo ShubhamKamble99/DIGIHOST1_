@@ -1,0 +1,79 @@
+.commercial {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 6rem;
+    padding: 0 4rem;
+}
+
+.commercial .headerSection {
+    padding: 2rem 4rem;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(31.2% 0%, 33.8% 12.5%, 100% 12.5%, 100% 81.5%, 88.1% 100%, 32% 100%, 0% 100%, 0% 23.3%, 19% 0%);
+}
+
+.commercial .headerInsideview {
+    background: url(../../Assets/axelborg-towers.png) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.commercialName {
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+.commercialInfo {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
+.commercial .Logo {
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+}
+
+.commercial .logoTxt {
+    font-size: 2.7rem;
+    padding: 0 1rem;
+    background: -webkit-linear-gradient(90deg, #b97627 0%, #e7a245 48%, #f9c270 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 1px 5px #24242438;
+}
+
+.NextBtn {
+    position: absolute;
+    position: absolute;
+    right: 5rem;
+    bottom: 0rem;
+    font-size: 3rem;
+}
+
+.NextBtn .nextImg {
+    color: #e7a245;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .commercial{
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .commercial .Logo{
+        display: none ;
+    }
+    .commercialInfo{
+        font-size: 1rem;
+    }
+    .commercialName{
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,317 @@
+.headerSection {
+    padding: 2rem 4rem;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(78.6% 0%, 82.1% 15.5%, 100% 16%, 100% 77%, 91.2% 100%, 32.5% 100%, 0.5% 100%, -7% 43%, 9.1% 0%);
+}
+
+.headerInsideview {
+    background: url(../../Assets/main.jpeg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.headerInsideview2 {
+    background: url(../../Assets/Atlantis.jpeg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Logo {
+    position: absolute;
+    right: 4rem;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logo img {
+    width: 70px;
+}
+
+.Logo .logoTxt {
+    font-size: 2.475rem;
+    padding: 0 1rem;
+    font-weight: 300;
+    letter-spacing: 9px;
+    background: -webkit-linear-gradient(90deg, #b97627 0%, #e7a245 48%, #f9c270 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 1px 5px #24242438;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+.logoTxt span {
+    font-size: 1rem;
+    display: block;
+}
+
+.HeadeDesc {
+    padding: 1.5rem 4rem;
+    position: relative;
+    display: inline-block;
+}
+
+.HeadeDesc .titletxt {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #b5b5b5;
+}
+
+.HeadeDesc .ContactUs {
+    font-size: 1.5rem;
+    padding: .7rem 0;
+}
+
+.HeadeDesc .ContactUs img {
+    margin-right: 1rem;
+}
+
+.HeadeDesc button {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #b97627;
+    margin: 20px 0;
+    position: relative;
+    color: #b97627;
+    background-color: #000;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.HeadeDesc button:hover {
+    background-color: #b97627;
+    color: #fff; 
+}
+
+.HeadeDesc button:before {
+    content: '';
+    width: 19px;
+    height: 17px;
+    background: #000;
+    border: 1px solid #b97627;
+    transform: rotate(45deg);
+    position: absolute;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    top: -9.6px;
+    left: -10.6px;
+}
+
+.HeadeDesc button:after {
+    content: '';
+    width: 19px;
+    height: 17px;
+    background: #000;
+    border: 1px solid #b97627;
+    transform: rotate(-132deg);
+    position: absolute;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    top: auto;
+    right: -10px;
+    bottom: -10px;
+}
+
+
+.HeadeDesc .Decription {
+    font-size: 1.2rem;
+    display: block;
+}
+
+.Decription .LotusTxt {
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+.NextBtn {
+    position: absolute;
+    right: 5rem;
+    bottom: 0rem;
+    font-size: 3rem;
+}
+
+.NextBtn .nextImg {
+    color: #e7a245;
+    cursor: pointer;
+}
+
+.LotusTxt span {
+    display: block;
+}
+
+.PopertyInfo .PopertyName {
+    font-size: 1.8rem;
+}
+
+.PopertyInfo .PopertyDec {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* For sidebar */
+.menuIcon {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menuOverlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    transition: left 0.3s ease;
+    z-index: 1001;
+}
+
+.menuOpen {
+    left: 0;
+}
+
+.closeIcon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1001;
+}
+
+.menuList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuList li {
+    margin: 2rem 0;
+}
+
+.menuList li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+.menuList li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #b97627;
+    transition: width 0.4s ease;
+}
+
+.menuList li a:hover {
+    color: #b97627;
+}
+
+.menuList li a:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerSection {
+        clip-path: none;
+    }
+    .mobileView{
+        display: none;
+    }
+  
+    .Logo {
+        right: 0;
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
+   
+    .mobileView .NextBtn .nextImg{
+        display: none;
+    }
+    .Logo .logoTxt {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        text-align: center;
+        display: none;
+    }
+
+    .Logo img {
+        width: 30px;
+    }
+    .mobileLogo{
+        display: none ;
+    }
+    .HeadeDesc {
+        padding: 1.5rem 0rem;
+    }
+
+    .HeadeDesc .titletxt {
+        font-size: 1.6rem;
+    }
+
+    .HeadeDesc .ContactUs {
+        font-size: 1rem;
+    }
+
+    .HeadeDesc .ContactUs img {
+        width: 20px !important;
+        margin-right: 10px;
+    }
+
+    .PopertyInfo .PopertyName {
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+
+    .PopertyInfo .PopertyDec {
+        font-size: 1rem;
+    }
+
+    .Decription .LotusTxt {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    /* .Decription {
+        padding-top: 2rem;
+    } */
+    .HeadeDesc button{
+        font-size: .8rem;
+        margin: 20px  0;
+    }
+    .menuIcon {
+        left: 1rem;
+    }
+}
